@@ -6,6 +6,11 @@
 
 
 
+<a name="sonarr-10.0.11"></a>
+### [sonarr-10.0.11](https://github.com/truecharts/apps/compare/sonarr-10.0.10...sonarr-10.0.11) (2022-04-07)
+
+
+
 <a name="sonarr-10.0.10"></a>
 ### [sonarr-10.0.10](https://github.com/truecharts/apps/compare/sonarr-10.0.9...sonarr-10.0.10) (2022-04-03)
 
@@ -92,8 +97,3 @@
 ### [sonarr-9.0.43](https://github.com/truecharts/apps/compare/sonarr-9.0.42...sonarr-9.0.43) (2022-02-21)
 
 #### Chore
-
-* update helm general non-major helm releases ([#1927](https://github.com/truecharts/apps/issues/1927))
-
-
-
