@@ -1,0 +1,32 @@
+image:
+  repository: tccr.io/truecharts/lazylibrarian
+  pullPolicy: IfNotPresent
+  tag: latest@sha256:5ecba98701f1a79bb7e88b83926121797115114ecaa761af1e16c89a1e91c190
+
+securityContext:
+  runAsNonRoot: false
+
+podSecurityContext:
+  runAsUser: 0
+  runAsGroup: 0
+
+service:
+  main:
+    ports:
+      main:
+        port: 5299
+        targetPort: 5299
+
+env:
+  DOCKER_MODS: linuxserver/mods:lazylibrarian-ffmpeg
+persistence:
+  config:
+    enabled: true
+    mountPath: "/config"
+  varrun:
+    enabled: true
+dockerMods:
+  ffmpeg:
+    enabled: true
+    repository: linuxserver/mods
+    tag: lazylibrarian-ffmpeg
